@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAN VALENTIN</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+        }
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <h3 style="font-size: 40px;">QUIERES SER MI VALENTINE DAY?</h3>
+        <button style="font-size: 40px;" type="button" onclick="redirection()" id="btnSi" >CHI</button>
+        <button style="font-size: 40px;"id="btnNo" onmouseover="mueveElBoton()">ÑO</button>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
